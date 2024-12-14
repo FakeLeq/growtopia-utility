@@ -41,6 +41,16 @@ ItemsDatDetails parse_items(uint8_t* data) {
         // see more in item_flags.h
         item.flags = reader.read_int<uint16_t>();
         item.type = reader.read_int<uint8_t>();
+
+        /**
+         * for blocks check item_flags.h
+         *
+         * shirts:
+         * RenderBackArm() getting data from here
+         * for player_sleeve
+         * it checks for base then checks if SleeveHasTwoColors()
+         * then it +1 to material data to get another part
+         */
         item.material = reader.read_int<uint8_t>();
 
         if(items_dat.version < 3)
