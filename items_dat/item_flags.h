@@ -15,7 +15,6 @@ enum Flags {
     ITEM_FLAG_FOREGROUND = 1 << 13,
     ITEM_FLAG_HOLIDAY = 1 << 14,
     ITEM_FLAG_UNTRADEABLE = 1 << 15,
-    ITEM_FLAG_NOFRAME = 1 << 16,
 };
 
 enum Flags2 {
